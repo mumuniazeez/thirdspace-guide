@@ -1,0 +1,87 @@
+---
+sidebar_position: 4
+---
+
+# guide on git and github
+
+learn all you need to know about git and github
+
+## what git and github actually are
+
+Git is a version control tool that runs on your computer and tracks every change you make to your code over time. Github is a website that host your Git repositories online, so your team can share code, review each other's work, and collaborate without emailing zip files back and forth.
+
+Git is the tool, Github is where the code lives and where the teamwork happens.
+
+:::tip[What is a repository?]
+A repository (or "repo") is the project folder itself, but with its entire history tracked inside it.
+It holds all the files, plus every commit ever made to them, so you can see exactly what changes, when, and by whom.
+:::
+
+## let's do some setup!!!
+
+- [Install Git](https://git-scm.com/install/) on your machine (comes built in on most Macs and Linux, downloadable for Windows)
+
+- [Install VS Code](https://code.visualstudio.com/) if you don't have it yet.
+
+- [Create a Github account](https://github.com) if you don't have one.
+
+- Set your identity so your commits are attributed to you, by running the command below in your terminal:
+
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "you@example.com"
+  ```
+
+## create your first repo
+
+Follow this steps to create your very first repository.
+
+- Create a folder for your project on your device (preferably on your Desktop).
+
+- Open your terminal, and open the folder you just created in your terminal.
+  You can drag and drop the folder in your terminal and click enter, or type in `cd Desktop/your_folder_name` (assuming your folder was created on the desktop)
+
+- Initialize a the git repo in the terminal by running:
+  ```bash
+  git init
+  ```
+
+And Congratulations you've successfully created your first Github Repo, you can now start coding in your repository.
+
+## host your repositories on github
+
+After creating your repository, and you want to make accessible to others, or you want to upload the changes you made online.
+
+- Stage all files you want to upload to github & Commit staged changes with a message describing what you did:
+
+  ![source control screenshot](/img/source-control-screenshot.png)
+  ![commit explanation](/img/commit-explanation.png)
+
+- Publish to github:
+
+  ![commit publish screenshot](/img/commit-publish-screenshot.png)
+
+  Select your repo visibility (should be Public)
+  ![select repo visibility](/img/select-repo-visibility.png)
+
+Now, your git repository is now hosted on github, well done!!
+
+## working on an existing project
+
+if someone else created the repo and hosted it on github, you can clone the repo.
+
+- copy the github repo link on github
+
+  ![github clone screenshot](/img/git-clone-screenshot.png)
+
+- open your terminal and type in this command and press enter
+  ```bash
+  git clone <link_you_copied>
+  ```
+
+Start coding! You now have a copy of the repo you can start working.
+
+## it ends here
+
+That concluded this guide on introduction to Git & Github.
+If you have a suggestions regarding this page or want edit this page, send @AzCodes a DM on slack, or email me@azcodes.dev
