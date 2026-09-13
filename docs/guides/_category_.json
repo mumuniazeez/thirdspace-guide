@@ -1,0 +1,8 @@
+{
+  "label": "guides",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "this section contains guides for using thirdspace.eEach guide provides step-by-step instructions and best practices for different aspects of the platform."
+  }
+}
