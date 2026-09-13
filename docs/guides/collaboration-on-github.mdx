@@ -9,3 +9,73 @@ since third space is about team, you need to know how to easily collaborate on y
 Here's how a team actually works together on one project.
 
 ## setting up the shared repository
+
+- One person creates the repository on Github and adds it as the team shared project
+
+- Add every team member as a collaborator under the repo's Settings → Collaborators, so everyone can push directly,
+  or use forks if you want tighter control over who can push
+
+- Agree early on one main branch always holds working, stable code.
+
+:::tip[What is a git branch]
+A branch is a separate line of work, so you can build a feature without touching the main codebase until it's ready
+:::
+
+## everyone works in their own branch
+
+- Nobody pushed straight to the main. Each person creates a branch for whatever they're working on:
+
+  ```bash
+  git checkout -b your-feature-name
+  ```
+
+- This keeps everyone's work isolated so one person's unfinished code doesn't break what someone else is building
+
+## staying in sync with the team
+
+- Pull the latest changes from main before starting new work each day:
+
+  ```bash
+  git checkout main
+  git pull
+  ```
+
+- If your branch has been open a while, bring it up to date with main so conflicts stay small:
+
+  ```bash
+  git checkout your-feature-name
+  git merge main
+  ```
+
+## opening a pull request
+
+- Once your part is working, push your branch and open a Pull Request into main
+
+- Write a clear PR description: what you built, why, and anything the reviewer should test
+
+- Tag a teammate to review it rather than merging it yourself
+
+## reviewing teammates' work
+
+- Read through the changed files, not just the description
+
+- Leave comments directly on specific lines if something's unclear or looks off
+
+- Approve when it looks good, or request changes if it needs work before merging
+
+- Reviewing each other's code catches bugs early and keeps everyone aware of what the rest of the team is building
+
+## common beginner mistakes to avoid
+
+- Push directly to main instead of working in a branch
+
+- Opening a PR with no description, leaving reviewer guessing what changed
+
+- Not pulling before starting work, leading to avoidable conflicts
+
+- Merging your own PR without a teammate reviewing it first.
+
+<br />
+<br />
+
+This guide ends here.
