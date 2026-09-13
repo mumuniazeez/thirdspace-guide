@@ -33,11 +33,23 @@ export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      title={`${siteConfig.title}`}
+      description="code with your friends. we upgrade your tech."
     >
       <HomepageHeader />
-      {/* <main></main> */}
+      <main
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "40px 0",
+        }}
+      >
+        <p style={{ fontSize: 40 }}>
+          code with your friends. <br />
+          we upgrade your tech.
+        </p>
+      </main>
     </Layout>
   );
 }
