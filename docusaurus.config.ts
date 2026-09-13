@@ -6,8 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "third space guide",
-  tagline:
-    "get $1000 to upgrade your tech",
+  tagline: "get $1000 to upgrade your tech",
   favicon: "img/favicon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -85,24 +84,24 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "guides",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/mumuniazeez/thirdspace-guide",
           label: "GitHub",
           position: "right",
         },
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
         {
-          title: "Docs",
+          title: "docs",
           items: [
             {
-              label: "Tutorial",
+              label: "guides",
               to: "/docs/intro",
             },
           ],
@@ -121,7 +120,7 @@ const config: Config = {
           ],
         },
         {
-          title: "More",
+          title: "more",
           items: [
             {
               label: "azcodes",
@@ -134,7 +133,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} third space guide by azcodes. Built with Docusaurus.`,
+      copyright: `copyright © ${new Date().getFullYear()} third space guide by azcodes. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
