@@ -89,7 +89,7 @@ const config: Config = {
         // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/mumuniazeez/thirdspace-guide",
-          label: "GitHub",
+          label: "gitHub",
           position: "right",
         },
       ],
