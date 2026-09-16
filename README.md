@@ -1,4 +1,10 @@
-# Website
+# Thirdspace YSWS Guide
+
+This Project is built to help participant in the third space ysws event.
+
+It contains guide from what third space is about to basic programming guides.
+
+DM @AzCodes on slack if you want to contribute, ot add you own guide to this website.
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
@@ -26,18 +32,4 @@ npm run build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true npm run deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> npm run deploy
-```
-
-If you are using GitHub Pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Made with <3 by AzCodes
