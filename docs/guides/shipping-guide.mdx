@@ -3,3 +3,74 @@ sidebar_position: 3
 ---
 
 # shipping guide
+
+don't ever get your project rejected. check the guide
+
+Different YSWS, different rules, so here's how shipping actually works for Third Space specifically.
+No fixed theme, but reviewers still need the receipts before your team's streak and grant are safe.
+
+## web ships
+
+Websites, web apps, games that run in a browser
+
+#### where it should live
+
+- Vercel or Netlify for anything frontend, both deploy straight from git
+- Github Pages if it's static, simple, and doesn't need a backend
+- Hack CLub Nest if you need something persistent running server side
+
+#### what gets a web ship sent back
+
+- Demo link points to a dashboard or repo instead of the actual live site
+- Something visibly broken when opened fresh, like a dead button or missing asset
+- README that reads like it was AI generated rather than written by your team
+- Site only reachable through a tunnel or localhost, which doesn't stay up once your laptop sleeps
+
+## native builds
+
+Windows, macOS, or Linux apps
+
+#### where it should live
+
+- Github Release, tagged and versioned, this is what reviewers expect by default
+- itch.io works too if you want a listing page alongside the download
+
+#### what gets a native build sent back
+
+- No mention of system requirement or first run steps (unblocking on Windows, right click Open on macOS)
+- Only tested on your own dev machine, so a missing dependency breaks it for the reviewer
+- Wrong or mismatching architecture with no label (Intel vs Apple Silicon, for example)
+
+## mobile ships
+
+Android APKs or iOS builds
+
+#### where it should live
+
+- Github Release, tagged and versioned, this is what reviewers expect by default
+
+#### what gets a mobile ship sent back
+
+- Android: no screen recording showing it actually running, so reviewers can't verify without sideloading blind.
+- iOS: no demo video att all, this one's is non negotiable since unsigned builds can't be installed
+- Missing permissions list or minSDK info, leaving reviewers guessing what the app touches
+
+## hardware ship
+
+PCBs, electronics, robots, sensor builds, or a hardware design that hasn't been physically built yet
+
+#### what needs to be in the repo
+
+- Schematic, board files, and a full Bill of Materials with real part numbers and rough costs
+- Firmware source if there is any
+- Photos/Videos of build, though a design only submission is still valid
+
+#### what gets a hardware ship sent back
+
+- Devlog (JOURNAL.md) missing or not posted every 3-5 hours, this is required specifically for hardware
+- Only screenshots or renders included, with no actual design source to reproduce it from
+- One giant commit at the end instead od progress reviewers can actually trace
+
+## Design Only / CAD ships
+
+3d printed parts, laser cut design, mechanical assemblies................................ continue tomorrow
