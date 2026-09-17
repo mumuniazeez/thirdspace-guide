@@ -3,6 +3,11 @@
  * and scoped locally.
  */
 
+@font-face {
+  font-family: adelphe;
+  src: url("/fonts/Adelphe-Trouble-FlorealRegular.woff");
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -20,4 +25,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.landingPageContainer {
+  background-image: url(/img/bg-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heroHeading {
+  font-size: 150px;
+  font-family: adelphe;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h6 {
+  font-family: adelphe;
 }

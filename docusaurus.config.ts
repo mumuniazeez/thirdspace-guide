@@ -6,7 +6,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "third space guide",
-  tagline: "get $1000 to upgrade your tech",
+  tagline: " no experience required. we just want you making cool stuff with your friends.",
   favicon: "img/favicon.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future

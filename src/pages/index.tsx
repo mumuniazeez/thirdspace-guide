@@ -10,18 +10,27 @@ import styles from "./index.module.css";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("", styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={clsx("hero__title", styles.heroHeading)}>
           {siteConfig.title}
         </Heading>
+        <p style={{ fontSize: 40, fontFamily: "adelphe" }}>
+          code with your friends. <br />
+          we upgrade your tech.
+         
+        </p>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
+            style={{
+              padding: 20,
+              borderRadius: 30,
+            }}
           >
-            go to the guide
+            go to the guide!
           </Link>
         </div>
       </div>
@@ -36,20 +45,17 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description="code with your friends. we upgrade your tech."
     >
-      <HomepageHeader />
-      <main
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "40px 0",
-        }}
-      >
-        <p style={{ fontSize: 40 }}>
-          code with your friends. <br />
-          we upgrade your tech.
-        </p>
-      </main>
+      <div className={styles.landingPageContainer}>
+        <HomepageHeader />
+        <main
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "40px 0",
+          }}
+        ></main>
+      </div>
     </Layout>
   );
 }
