@@ -45,7 +45,7 @@ export default function Home(): ReactNode {
       title={`${siteConfig.title}`}
       description="code with your friends. we upgrade your tech."
     >
-      <div className={styles.landingPageContainer}>
+      <div className={clsx(styles.landingPageContainer)}>
         <HomepageHeader />
         <main
           style={{
